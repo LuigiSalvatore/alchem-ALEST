@@ -44,17 +44,19 @@ string leitura2(string filename)
             string nodo_ini;
             string nodo_fim;
             vector<map<float, string>> vec;
-            /* vector de um mapa; map do elemento e seus edges;*/
-            vector<map<string, vector<Edge>>> graph;
+
             while (true)
             {
                 getline(ss, weight, ' ');
                 if (weight == "->")
                     break;
                 getline(ss, nodo_ini, ' ');
+                // adicionar weight e nodo_ini pro grafo, tem um edge dirigido entre eles.
             }
-            getline(ss, lixo, ' ');
+            getline(ss, weight, ' ');
+            getline(ss, nodo_fim, ' ');
         }
+
         file.close();
     }
     return "v: ", v, ";\tw: ", w, NEWLINE;
