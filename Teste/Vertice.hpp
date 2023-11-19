@@ -12,10 +12,8 @@ public:
     ~Vertice();
     std::string getName();
     void setName(std::string Nome);
-    friend std::ostream &operator<<(std::ostream &os, const Vertice &vert)
-    {
-        return os << vert.Nome;
-    }
+    friend std::ostream &operator<<(std::ostream &os, const Vertice &vert);
+    friend bool operator<(const Vertice &l, const Vertice &r);
 };
 
 #endif

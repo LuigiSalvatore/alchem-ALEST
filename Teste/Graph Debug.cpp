@@ -2,7 +2,6 @@
 #include <iostream>
 #include <sstream>
 #include <fstream>
-#include <algorithm>
 #define DEBUG
 
 using namespace std;
@@ -46,39 +45,44 @@ void Graph::printVertices()
     std::cout << ss.str() << std::endl;
 }
 
-vector<string> Graph::split(string filename)
+string Graph::leitura(string filename)
 {
     ifstream file;
     string NEWLINE = "\n";
     file.open(filename);
-    string line, weight, nodo, nodoI, nodoF, lixo, str1, str2;
+    string line, weight, weight2, nodo, nodoI, nodoF;
     vector<Edge> alchem;
-    vector<string> aux;
     if (file.is_open())
     {
+#ifdef DEBUG
+        cout << "File opened" << endl;
+#endif
         while (getline(file, line))
         {
             stringstream ss(line);
-
-            while (getline(ss, str1, ' '))
+            while (true)
             {
-                aux.push_back(str1);
+                getline(ss, weight, ' ');
+                if (weight == "->")
+                {
+                    getline(ss, weight2, ' ');
+                    getline(ss, nodoI, ' ');
+#ifdef DEBUG
+                    cout << "weight: " << weight << " ";
+                    cout << "nodoI: " << nodoI << endl;
+#endif
+                    this->setVecEdge(nodoI, alchem);
+                    break;
+                }
+                getline(ss, nodoF, ' ');
+                alchem.push_back(toEdge(nodoF, stof(weight)));
+#ifdef DEBUG
+                cout << "weight: " << weight << "\t";
+                cout << "nodoF: " << nodoF << endl;
+#endif
             }
         }
         file.close();
-        // for (auto it = aux.begin(); it < aux.end(); it++)
-        //     cout << *it << "\t";
-        // cout << endl;
     }
-    return aux;
-}
-
-void Graph::algorithm(std::vector<string> vec)
-{
-    int flag = 0;
-    for (int i = 0; i < vec.size() - 2; i + 2)
-    {
-        addEdge()
-            list.insert(vec[i + 1]);
-    }
+    return "Done Reading...\n";
 }

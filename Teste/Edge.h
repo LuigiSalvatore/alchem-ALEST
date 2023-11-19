@@ -19,9 +19,7 @@ struct Edge
     return os << obj.Destination << " (" << obj.weight << ")";
   }
 };
-Edge toEdge(std::string Destination, float weight)
-{
-  // Edge e(Destination, weight);
-  return Edge(Destination, weight);
-}
+
+Edge toEdge(std::string Destination, float weight);
+
 #endif

@@ -7,19 +7,16 @@
 class Graph
 {
 private:
-    std::map<Vertice, vector<Edge>> graph;
+    std::map<Vertice, std::vector<Edge>> graph;
     std::set<Vertice> list;
 
 public:
     Graph();
-    // Graph(std::map<Vertice, Edge> graph);
-    // Graph(Vertice V, Edge E);
-    // Graph(Vertice V, std::string destinantion, float weight);
     ~Graph();
-    std::map<Vertice, vector<Edge>> getMap();
+    std::map<Vertice, std::vector<Edge>> getMap();
     std::set<Vertice> getVertices();
     void addEdge(Vertice V, std::string Destination, float weight = 0);
-    void setVecEdge(Vertice V, vector<Edge> E);
+    void setVecEdge(Vertice V, std::vector<Edge> E);
     void printVertices();
 
     friend std::ostream &operator<<(std::ostream &os, const Graph &g)
@@ -34,5 +31,6 @@ public:
         }
         return os;
     }
-    std::string leitura(std::string filename);
+    std::vector<string> split(std::string filename);
+    void algorithm(std::vector<string> vec);
 };

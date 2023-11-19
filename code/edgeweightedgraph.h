@@ -4,6 +4,7 @@
 #include <vector>
 
 #include "edge.h"
+using namespace std;
 
 #ifndef EWGRAPH_H
 #define EWGRAPH_H
@@ -12,21 +13,21 @@ class EdgeWeightedGraph
 {
 public:
   EdgeWeightedGraph();
-  EdgeWeightedGraph(std::string filename);
+  EdgeWeightedGraph(string filename);
 
-  std::vector<Edge> getAdj(std::string v);
-  std::set<std::string> getVerts();
+  vector<Edge> getAdj(string v);
+  set<string> getVerts();
 
-  void addEdge(std::string v, std::string w, float weight);
+  void addEdge(string v, string w, float weight);
 
-  std::string toDot();
+  string toDot();
 
 protected:
-  void addToList(std::string v, Edge e);
-  std::set<std::string> vertices;
+  void addToList(string v, Edge e);
+  set<string> vertices;
 
 private:
-  std::map<std::string, std::vector<Edge>> graph;
+  map<string, vector<Edge>> graph;
 };
 
 #endif

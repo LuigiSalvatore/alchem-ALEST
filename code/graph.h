@@ -2,28 +2,30 @@
 #include <set>
 #include <string>
 #include <vector>
+using namespace std;
 
 #ifndef GRAPH_H
 #define GRAPH_H
 
-class Graph {
- public:
+class Graph
+{
+public:
   Graph();
-  Graph(std::string filename);
+  Graph(string filename);
 
-  std::vector<std::string> getAdj(std::string v);
-  std::set<std::string> getVerts();
+  vector<string> getAdj(string v);
+  set<string> getVerts();
 
-  void addEdge(std::string v, std::string w);
+  void addEdge(string v, string w);
 
-  std::string toDot();
+  string toDot();
 
- protected:
-  void addToList(std::string v, std::string w);
-  std::set<std::string> vertices;
+protected:
+  void addToList(string v, string w);
+  set<string> vertices;
 
- private:
-  std::map<std::string, std::vector<std::string>> graph;
+private:
+  map<string, vector<string>> graph;
 };
 
 #endif
