@@ -14,23 +14,23 @@ Graph::Graph()
 {
 }
 
-std::map<Vertice, vector<Edge>> Graph::getMap()
+std::map<std::string, vector<Edge>> Graph::getMap()
 {
     return graph;
 }
 
-std::set<Vertice> Graph::getVertices()
+std::set<std::string> Graph::getVertices()
 {
     return list;
 }
 
-void Graph::addEdge(Vertice V, std::string Destination, float weight)
+void Graph::addEdge(std::string V, std::string Destination, float weight)
 {
     graph[V].push_back(toEdge(Destination, weight));
     list.insert(V);
 }
 
-void Graph::setVecEdge(Vertice V, vector<Edge> E)
+void Graph::setVecEdge(std::string V, vector<Edge> E)
 {
     graph[V] = E;
     list.insert(V);
@@ -46,39 +46,40 @@ void Graph::printVertices()
     std::cout << ss.str() << std::endl;
 }
 
-vector<string> Graph::split(string filename)
+void Graph::addToList(string vertice, string destination, float weight)
 {
-    ifstream file;
-    string NEWLINE = "\n";
-    file.open(filename);
-    string line, weight, nodo, nodoI, nodoF, lixo, str1, str2;
-    vector<Edge> alchem;
-    vector<string> aux;
-    if (file.is_open())
-    {
-        while (getline(file, line))
-        {
-            stringstream ss(line);
-
-            while (getline(ss, str1, ' '))
-            {
-                aux.push_back(str1);
-            }
-        }
-        file.close();
-        // for (auto it = aux.begin(); it < aux.end(); it++)
-        //     cout << *it << "\t";
-        // cout << endl;
-    }
-    return aux;
+    vector<Edge> &list = graph[vertice];
+    list.push_back(toEdge(destination, weight));
 }
 
-void Graph::algorithm(std::vector<string> vec)
+void Graph::leitura(string filename)
 {
-    int flag = 0;
-    for (int i = 0; i < vec.size() - 2; i + 2)
+    ifstream arq;
+    string line;
+    arq.open(filename);
+
+    stringstream output;
+    string weight, catalizador, begin, end;
+
+    map<string, vector<pair<string, int>>> elements;
+
+    if (arq.is_open())
     {
-        addEdge()
-            list.insert(vec[i + 1]);
+        while (getline(arq, line))
+        {
+            size_t pos = line.find("->");
+
+            if (pos != string::npos)
+            {
+                istringstream iss(line.substr(0, pos));
+
+                while (iss >> weight >> catalizador)
+                {
+                    output << catalizador << line.substr(pos + 4) << " " << weight << endl;
+                    graph[catalizador].push_back(toEdge(line.substr(pos + 4), stoi(weight)));
+                }
+            }
+        }
     }
+    return;
 }
