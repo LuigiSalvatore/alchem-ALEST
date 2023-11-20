@@ -33,4 +33,5 @@ public:
     }
     void addToList(std::string V, std::string Destination, float weight = 0);
     void leitura(std::string filename);
+    int hidrogenPrice(std::string vertice, int hidrogenio = 0);
 };

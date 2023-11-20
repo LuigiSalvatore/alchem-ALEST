@@ -7,6 +7,8 @@ int main(void)
 {
     Graph g;
     g.leitura("casoa5.txt");
+
+    cout << g.hidrogenPrice("hidrogenio");
     cout << g << endl;
     return 1;
 }

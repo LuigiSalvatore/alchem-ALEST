@@ -83,3 +83,20 @@ void Graph::leitura(string filename)
     }
     return;
 }
+
+int Graph::hidrogenPrice(string vertice, int hidrogenio)
+{
+    if (vertice == "ouro")
+        return 1;
+    vector<Edge> vec = graph[vertice];
+    for (auto it = vec.begin(); it != vec.end(); it++)
+    {
+        cout << "vertice: " << vertice << " weight: " << it->weight << " edge: " << it->Destination << endl;
+    }
+    for (auto it = vec.begin(); it != vec.end(); it++)
+    {
+        hidrogenio += it->weight * hidrogenPrice(it->Destination, hidrogenio);
+        cout << "vertice: " << vertice << " weight: " << it->weight << " edge: " << it->Destination << endl;
+    }
+    return hidrogenio;
+}
