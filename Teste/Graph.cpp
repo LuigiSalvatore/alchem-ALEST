@@ -86,44 +86,28 @@ void Graph::leitura(string filename)
 
 math::Integer Graph::hidrogenPrice(string vertice)
 {
+    COUNTER_OF_LOOPS++;
     math::Integer hidrogenio = 0;
-    if (vertice == "ouro")
-        return 1;
     const vector<Edge> vec = graph[vertice].first;
 
-    for (auto it = vec.begin(); it != vec.end(); it++)
+    if (vertice == "ouro")
     {
-        hidrogenio = hidrogenio + (it->weight * hidrogenPrice(it->Destination));
+        return 1;
     }
-    //     while (vec.size())
-    //     {
-    //         Edge ed = vec.back();
-    //         vec.pop_back();
-    //         // cout << "destination: " << ed.Destination << endl;
 
-    //         hidrogenio = hidrogenio + (ed.weight * hidrogenPrice(ed.Destination));
-    // #ifdef DEBUG
-    //         cout << "vertice: " << vertice << " weight: " << ed.weight << " edge: " << ed.Destination << endl;
-    //         cout << "hidrogenio: " << hidrogenio << endl;
-    //         cout << "vertice: " << vertice << endl;
-    //         cout << "ed.Destination: " << ed.Destination << endl;
-    //         cout << "ed.weight: " << ed.weight << endl;
-    //         cout << endl;
-    // #endif
-    //     }
+    if (valores[vertice] != 0)
+    {
+        return valores[vertice];
+    }
+
+    for (auto it = vec.begin(); it != vec.end(); it++)
+        hidrogenio = hidrogenio + (it->weight * hidrogenPrice(it->Destination));
+
+    if (hidrogenio == 0)
+    {
+        valores[vertice] = 1;
+        return 1;
+    }
+    valores[vertice] = hidrogenio;
     return hidrogenio;
 }
-
-// math::Integer print(string s)
-// {
-//     if (s == "ouro")
-//     {
-//         return 1;
-//     }
-//     math::Integer total;
-//     for (unsigned int i = 0; i < grafo[s].size(); i++)
-//     {
-//         total += grafo[s][i].peso * print(grafo[s][i].nome);
-//     }
-//     return total;
-// }

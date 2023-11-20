@@ -10,10 +10,10 @@ all:			${APPLICATIVO}
 ${APPLICATIVO}:	${DASHOES}
 	g++ -o ${APPLICATIVO} ${DASHOES}
 
-${MAIN_NAME}.o: 		${MAIN_NAME}.cpp Graph.cpp Graph.hpp Edge.cpp Edge.h Vertice.cpp Vertice.hpp math_integer.h
+${MAIN_NAME}.o: 		${MAIN_NAME}.cpp Externs.h Graph.cpp Graph.hpp Edge.cpp Edge.h Vertice.cpp Vertice.hpp math_integer.h
 	g++ ${CFLAGS} ${MAIN_NAME}.cpp
 
-Graph.o: 		Graph.cpp Graph.hpp Edge.cpp Edge.h Vertice.cpp Vertice.hpp math_integer.h
+Graph.o: 		Graph.cpp Graph.hpp Edge.cpp Edge.h Vertice.cpp Vertice.hpp Externs.h math_integer.h
 	g++ ${CFLAGS} 	Graph.cpp
 
 Vertice.o: 			Vertice.cpp Vertice.hpp

@@ -5,12 +5,14 @@
 #include <vector>
 #include <utility>
 #include "math_Integer.h"
+#include "Externs.h"
 
 class Graph
 {
 private:
     std::map<std::string, std::pair<std::vector<Edge>, math::Integer>> graph;
     std::set<std::string> list;
+    std::map<std::string, math::Integer> valores;
 
 public:
     Graph();

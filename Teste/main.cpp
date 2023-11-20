@@ -1,6 +1,10 @@
 #include "Graph.hpp"
 #include <iostream>
+#include <chrono>
 
+int COUNTER_OF_LOOPS = 0;
+
+// file = casoteste.txt
 // file = casoa5.txt
 // file = casoa20.txt
 // file = casoa40.txt
@@ -12,80 +16,31 @@
 // file = caso320.txt
 // file = casoa360.txt
 // file = casoa400.txt
-// file = casoteste.txt
 
 using namespace std;
+using namespace std::chrono;
 
 int main(void)
 {
-    Graph a;
-    cout << "===========================================================================================" << endl;
-    a.leitura("casoa20.txt");
-    cout << "CASO A20" << endl;
-    cout << a.hidrogenPrice("hidrogenio") << endl;
-    cout << "===========================================================================================" << endl;
+    string files[] = {"casoteste.txt", "casoa5.txt", "casoa20.txt", "casoa40.txt", "casoa60.txt", "casoa80.txt", "casoa120.txt", "casoa240.txt", "casoa280.txt", "caso320.txt", "casoa360.txt", "casoa400.txt"};
 
-    Graph b;
-    cout << "===========================================================================================" << endl;
-    b.leitura("casoa40.txt");
-    cout << "CASO A40" << endl;
-    cout << b.hidrogenPrice("hidrogenio") << endl;
-    cout << "===========================================================================================" << endl;
+    for (int i = 0; i < sizeof(files) / sizeof(files[0]); i++)
+    {
+        auto start = high_resolution_clock::now();
+        Graph graph;
+        cout << "===========================================================================================" << endl;
+        graph.leitura(files[i]);
+        cout << "CASO " << files[i] << endl;
+        cout << graph.hidrogenPrice("hidrogenio") << endl;
+        cout << "===========================================================================================" << endl;
+        auto stop = high_resolution_clock::now();
+        auto duration = duration_cast<microseconds>(stop - start);
+        cout << "Time taken by function: "
+             << duration.count() << " microseconds" << endl;
+        cout << "===========================================================================================" << endl;
+        cout << "Times the function was called: " << COUNTER_OF_LOOPS << endl;
+        cout << "===========================================================================================" << endl;
+    }
 
-    // Graph c;
-    // cout << "===========================================================================================" << endl;
-    // c.leitura("casoa60.txt");
-    // cout << "CASO A60" << endl;
-    // cout << c.hidrogenPrice("hidrogenio") << endl;
-    // cout << "===========================================================================================" << endl;
-
-    // Graph d;
-    // cout << "===========================================================================================" << endl;
-    // d.leitura("casoa80.txt");
-    // cout << "CASO A80" << endl;
-    // cout << d.hidrogenPrice("hidrogenio") << endl;
-    // cout << "===========================================================================================" << endl;
-
-    // Graph e;
-    // cout << "===========================================================================================" << endl;
-    // e.leitura("casoa120.txt");
-    // cout << "CASO A120" << endl;
-    // cout << e.hidrogenPrice("hidrogenio") << endl;
-    // cout << "===========================================================================================" << endl;
-
-    // Graph f;
-    // cout << "===========================================================================================" << endl;
-    // f.leitura("casoa240.txt");
-    // cout << "CASO A240" << endl;
-    // cout << f.hidrogenPrice("hidrogenio") << endl;
-    // cout << "===========================================================================================" << endl;
-
-    // Graph g;
-    // cout << "===========================================================================================" << endl;
-    // g.leitura("casoa280.txt");
-    // cout << "CASO A280" << endl;
-    // cout << g.hidrogenPrice("hidrogenio") << endl;
-    // cout << "===========================================================================================" << endl;
-
-    // Graph h;
-    // cout << "===========================================================================================" << endl;
-    // h.leitura("caso320.txt");
-    // cout << "CASO A320" << endl;
-    // cout << h.hidrogenPrice("hidrogenio") << endl;
-    // cout << "===========================================================================================" << endl;
-
-    // Graph i;
-    // cout << "===========================================================================================" << endl;
-    // i.leitura("casoa360.txt");
-    // cout << "CASO A360" << endl;
-    // cout << i.hidrogenPrice("hidrogenio") << endl;
-    // cout << "===========================================================================================" << endl;
-
-    // Graph j;
-    // cout << "===========================================================================================" << endl;
-    // j.leitura("casoa400.txt");
-    // cout << "CASO A400" << endl;
-    // cout << j.hidrogenPrice("hidrogenio") << endl;
-    // cout << "===========================================================================================" << endl;
     return 1;
 }
