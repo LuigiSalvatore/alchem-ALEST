@@ -1,0 +1,268 @@
+===========================================================================================
+hidrogenio: 0
+vertice: laziopton weight: 9 edge: ouro
+vertice: heisenbergium weight: 15 edge: laziopton
+vertice: hidrogenio weight: 1 edge: heisenbergium
+hidrogenio: 135
+vertice: xenomatter weight: 11 edge: ouro
+vertice: wompacron weight: 18 edge: xenomatter
+vertice: hidrogenio weight: 7 edge: wompacron
+hidrogenio: 19476
+vertice: chissite weight: 10 edge: ouro
+vertice: buffytonium weight: 4 edge: chissite
+hidrogenio: 97420
+vertice: laziopton weight: 9 edge: ouro
+vertice: buffytonium weight: 15 edge: laziopton
+vertice: hidrogenio weight: 4 edge: buffytonium
+hidrogenio: 6254896
+vertice: laziopton weight: 9 edge: ouro
+vertice: astronium weight: 8 edge: laziopton
+vertice: hidrogenio weight: 14 edge: astronium
+hidrogenio: 794372800
+vertice: jarjarium weight: 15 edge: ouro
+vertice: aluminio weight: 6 edge: jarjarium
+vertice: hidrogenio weight: 16 edge: aluminio
+hidrogenio: -2147483648
+vertice: laziopton weight: 9 edge: ouro
+vertice: exotrilium weight: 9 edge: laziopton
+vertice: atomorphium weight: 9 edge: exotrilium
+vertice: hidrogenio weight: 14 edge: atomorphium
+hidrogenio: -2147483648
+vertice: xenomatter weight: 11 edge: ouro
+vertice: radonio weight: 7 edge: xenomatter
+vertice: hidrogenio weight: 4 edge: radonio
+hidrogenio: -2147483648
+vertice: laziopton weight: 9 edge: ouro
+vertice: huttite weight: 2 edge: laziopton
+vertice: hidrogenio weight: 18 edge: huttite
+hidrogenio: -2147483648
+vertice: laziopton weight: 9 edge: ouro
+vertice: jacktorium weight: 20 edge: laziopton
+vertice: hidrogenio weight: 5 edge: jacktorium
+hidrogenio: -2147483648
+vertice: laziopton weight: 9 edge: ouro
+vertice: echanius weight: 3 edge: laziopton
+vertice: hidrogenio weight: 17 edge: echanius
+hidrogenio: -2147483648
+vertice: jarjarium weight: 15 edge: ouro
+vertice: besiktasium weight: 11 edge: jarjarium
+vertice: hidrogenio weight: 11 edge: besiktasium
+hidrogenio: -2147483648
+vertice: chissite weight: 10 edge: ouro
+vertice: barbtonium weight: 10 edge: chissite
+vertice: hidrogenio weight: 1 edge: barbtonium
+hidrogenio: -2147483648
+vertice: chissite weight: 10 edge: ouro
+vertice: blueson weight: 12 edge: chissite
+vertice: hidrogenio weight: 10 edge: blueson
+hidrogenio: -2147483648
+vertice: laziopton weight: 9 edge: ouro
+vertice: echanium weight: 6 edge: laziopton
+vertice: hidrogenio weight: 6 edge: echanium
+hidrogenio: -2147483648
+vertice: chissite weight: 10 edge: ouro
+vertice: biogalvanite weight: 15 edge: chissite
+hidrogenio: -2147483648
+vertice: laziopton weight: 9 edge: ouro
+vertice: exotrilium weight: 9 edge: laziopton
+vertice: biogalvanite weight: 7 edge: exotrilium
+vertice: hidrogenio weight: 16 edge: biogalvanite
+hidrogenio: -2147483648
+vertice: jarjarium weight: 15 edge: ouro
+vertice: bothanite weight: 9 edge: jarjarium
+vertice: hidrogenio weight: 14 edge: bothanite
+hidrogenio: -2147483648
+vertice: jarjarium weight: 15 edge: ouro
+vertice: barcelonium weight: 14 edge: jarjarium
+vertice: hidrogenio weight: 4 edge: barcelonium
+hidrogenio: -2147483648
+vertice: xenomatter weight: 11 edge: ouro
+vertice: winduon weight: 13 edge: xenomatter
+vertice: hidrogenio weight: 13 edge: winduon
+hidrogenio: -2147483648
+vertice: xenomatter weight: 11 edge: ouro
+vertice: bocajuniun weight: 20 edge: xenomatter
+vertice: hidrogenio weight: 7 edge: bocajuniun
+hidrogenio: -2147483648
+vertice: xenomatter weight: 11 edge: ouro
+vertice: verdanium weight: 11 edge: xenomatter
+vertice: hidrogenio weight: 11 edge: verdanium
+hidrogenio: -2147483648
+vertice: jarjarium weight: 15 edge: ouro
+vertice: hamburgerium weight: 9 edge: jarjarium
+vertice: hidrogenio weight: 8 edge: hamburgerium
+hidrogenio: -2147483648
+vertice: jarjarium weight: 15 edge: ouro
+vertice: daeneryston weight: 15 edge: jarjarium
+vertice: hidrogenio weight: 14 edge: daeneryston
+hidrogenio: -2147483648
+vertice: chissite weight: 10 edge: ouro
+vertice: berilio weight: 12 edge: chissite
+hidrogenio: -2147483648
+vertice: laziopton weight: 9 edge: ouro
+vertice: exotrilium weight: 9 edge: laziopton
+vertice: berilio weight: 15 edge: exotrilium
+vertice: hidrogenio weight: 4 edge: berilio
+hidrogenio: -2147483648
+vertice: xenomatter weight: 11 edge: ouro
+vertice: michonneon weight: 5 edge: xenomatter
+vertice: hidrogenio weight: 20 edge: michonneon
+hidrogenio: -2147483648
+vertice: laziopton weight: 9 edge: ouro
+vertice: fluor weight: 16 edge: laziopton
+vertice: hidrogenio weight: 17 edge: fluor
+hidrogenio: -2147483648
+vertice: xenomatter weight: 11 edge: ouro
+vertice: manchesterite weight: 5 edge: xenomatter
+vertice: hidrogenio weight: 4 edge: manchesterite
+hidrogenio: -2147483648
+vertice: jarjarium weight: 15 edge: ouro
+vertice: barbite weight: 8 edge: jarjarium
+vertice: hidrogenio weight: 15 edge: barbite
+hidrogenio: -2147483648
+vertice: jarjarium weight: 15 edge: ouro
+vertice: cryotrite weight: 16 edge: jarjarium
+hidrogenio: -2147483648
+vertice: laziopton weight: 9 edge: ouro
+vertice: exotrilium weight: 9 edge: laziopton
+vertice: cryotrite weight: 17 edge: exotrilium
+vertice: hidrogenio weight: 8 edge: cryotrite
+hidrogenio: -2147483648
+vertice: chissite weight: 10 edge: ouro
+vertice: cesio weight: 17 edge: chissite
+vertice: hidrogenio weight: 7 edge: cesio
+hidrogenio: -2147483648
+vertice: laziopton weight: 9 edge: ouro
+vertice: gamorreanium weight: 18 edge: laziopton
+vertice: hidrogenio weight: 7 edge: gamorreanium
+hidrogenio: -2147483648
+vertice: laziopton weight: 9 edge: ouro
+vertice: cloro weight: 18 edge: laziopton
+vertice: hidrogenio weight: 3 edge: cloro
+hidrogenio: -2147483648
+vertice: xenomatter weight: 11 edge: ouro
+vertice: gravitrin weight: 4 edge: xenomatter
+vertice: hidrogenio weight: 9 edge: gravitrin
+hidrogenio: -2147483648
+vertice: chissite weight: 10 edge: ouro
+vertice: alderaanite weight: 1 edge: chissite
+vertice: hidrogenio weight: 6 edge: alderaanite
+hidrogenio: -2147483648
+vertice: jarjarium weight: 15 edge: ouro
+vertice: graviphoton weight: 13 edge: jarjarium
+vertice: hidrogenio weight: 1 edge: graviphoton
+hidrogenio: -2147483648
+vertice: jarjarium weight: 15 edge: ouro
+vertice: antimonio weight: 9 edge: jarjarium
+vertice: hidrogenio weight: 20 edge: antimonio
+hidrogenio: -2147483648
+vertice: jarjarium weight: 15 edge: ouro
+vertice: hothium weight: 11 edge: jarjarium
+vertice: hidrogenio weight: 7 edge: hothium
+hidrogenio: -2147483648
+vertice: chissite weight: 10 edge: ouro
+vertice: chewbacconium weight: 19 edge: chissite
+vertice: hidrogenio weight: 4 edge: chewbacconium
+hidrogenio: -2147483648
+vertice: laziopton weight: 9 edge: ouro
+vertice: exotrilium weight: 9 edge: laziopton
+vertice: erbio weight: 7 edge: exotrilium
+vertice: hidrogenio weight: 10 edge: erbio
+hidrogenio: -2147483648
+vertice: xenomatter weight: 11 edge: ouro
+vertice: geonosianon weight: 12 edge: xenomatter
+vertice: hidrogenio weight: 19 edge: geonosianon
+hidrogenio: -2147483648
+vertice: jarjarium weight: 15 edge: ouro
+vertice: ewokium weight: 10 edge: jarjarium
+vertice: hidrogenio weight: 18 edge: ewokium
+hidrogenio: -2147483648
+vertice: chissite weight: 10 edge: ouro
+vertice: arsenalium weight: 11 edge: chissite
+hidrogenio: -2147483648
+vertice: xenomatter weight: 11 edge: ouro
+vertice: arsenalium weight: 7 edge: xenomatter
+vertice: hidrogenio weight: 12 edge: arsenalium
+hidrogenio: -2147483648
+vertice: laziopton weight: 9 edge: ouro
+vertice: estroncio weight: 10 edge: laziopton
+vertice: hidrogenio weight: 10 edge: estroncio
+hidrogenio: -2147483648
+vertice: jarjarium weight: 15 edge: ouro
+vertice: holmio weight: 4 edge: jarjarium
+vertice: hidrogenio weight: 8 edge: holmio
+hidrogenio: -2147483648
+vertice: jarjarium weight: 15 edge: ouro
+vertice: aurorium weight: 19 edge: jarjarium
+vertice: hidrogenio weight: 13 edge: aurorium
+hidrogenio: -2147483648
+vertice: jarjarium weight: 15 edge: ouro
+vertice: arcanite weight: 6 edge: jarjarium
+vertice: hidrogenio weight: 2 edge: arcanite
+hidrogenio: -2147483648
+vertice: chissite weight: 10 edge: ouro
+vertice: benficium weight: 3 edge: chissite
+vertice: hidrogenio weight: 1 edge: benficium
+hidrogenio: -2147483648
+vertice: laziopton weight: 9 edge: ouro
+vertice: exotrilium weight: 9 edge: laziopton
+vertice: bioquarkium weight: 10 edge: exotrilium
+vertice: hidrogenio weight: 6 edge: bioquarkium
+hidrogenio: -2147483648
+vertice: chissite weight: 10 edge: ouro
+vertice: carbono weight: 15 edge: chissite
+vertice: hidrogenio weight: 4 edge: carbono
+hidrogenio: -2147483648
+vertice: xenomatter weight: 11 edge: ouro
+vertice: weasleyium weight: 12 edge: xenomatter
+vertice: hidrogenio weight: 10 edge: weasleyium
+hidrogenio: -2147483648
+vertice: chissite weight: 10 edge: ouro
+vertice: aquatronium weight: 18 edge: chissite
+vertice: hidrogenio weight: 12 edge: aquatronium
+-2147483648
+===========================================================================================
+hidrogenio: 0
+vertice: zinco weight: 6 edge: ouro
+vertice: paladio weight: 9 edge: zinco
+vertice: netunio weight: 6 edge: paladio
+vertice: erbio weight: 2 edge: netunio
+vertice: hidrogenio weight: 1 edge: erbio
+hidrogenio: 648
+vertice: zinco weight: 6 edge: ouro
+vertice: promecio weight: 8 edge: zinco
+vertice: itrio weight: 3 edge: promecio
+vertice: hidrogenio weight: 10 edge: itrio
+hidrogenio: 183528
+vertice: zinco weight: 6 edge: ouro
+vertice: paladio weight: 9 edge: zinco
+vertice: netunio weight: 6 edge: paladio
+vertice: cesio weight: 5 edge: netunio
+vertice: hidrogenio weight: 7 edge: cesio
+hidrogenio: 393311844
+vertice: selenio weight: 1 edge: ouro
+vertice: europio weight: 3 edge: selenio
+vertice: hidrogenio weight: 6 edge: europio
+hidrogenio: -2147483648
+vertice: zinco weight: 6 edge: ouro
+vertice: paladio weight: 9 edge: zinco
+vertice: cadmio weight: 8 edge: paladio
+vertice: hidrogenio weight: 3 edge: cadmio
+hidrogenio: -2147483648
+vertice: selenio weight: 1 edge: ouro
+vertice: protactinio weight: 3 edge: selenio
+vertice: hidrogenio weight: 8 edge: protactinio
+hidrogenio: -2147483648
+vertice: zinco weight: 6 edge: ouro
+vertice: cromo weight: 4 edge: zinco
+vertice: hidrogenio weight: 2 edge: cromo
+hidrogenio: -2147483648
+vertice: zinco weight: 6 edge: ouro
+vertice: praseodimio weight: 3 edge: zinco
+vertice: hidrogenio weight: 1 edge: praseodimio
+hidrogenio: -2147483648
+vertice: zinco weight: 6 edge: ouro
+vertice: promecio weight: 8 edge: zinco
+vertice: iterbio weight: 3 edge: promecio
+vertice: hidrogenio weight: 10 edge: iterbio
+-2147483648

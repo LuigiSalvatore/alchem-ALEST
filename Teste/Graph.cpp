@@ -3,7 +3,6 @@
 #include <sstream>
 #include <fstream>
 #include <algorithm>
-#define DEBUG
 
 using namespace std;
 Graph::~Graph()
@@ -14,7 +13,7 @@ Graph::Graph()
 {
 }
 
-std::map<std::string, vector<Edge>> Graph::getMap()
+std::map<std::string, std::pair<std::vector<Edge>, math::Integer>> Graph::getMap()
 {
     return graph;
 }
@@ -26,13 +25,13 @@ std::set<std::string> Graph::getVertices()
 
 void Graph::addEdge(std::string V, std::string Destination, float weight)
 {
-    graph[V].push_back(toEdge(Destination, weight));
+    graph[V].first.push_back(toEdge(Destination, weight));
     list.insert(V);
 }
 
 void Graph::setVecEdge(std::string V, vector<Edge> E)
 {
-    graph[V] = E;
+    graph[V].first = E;
     list.insert(V);
 }
 
@@ -48,7 +47,7 @@ void Graph::printVertices()
 
 void Graph::addToList(string vertice, string destination, float weight)
 {
-    vector<Edge> &list = graph[vertice];
+    vector<Edge> &list = graph[vertice].first;
     list.push_back(toEdge(destination, weight));
 }
 
@@ -75,8 +74,9 @@ void Graph::leitura(string filename)
 
                 while (iss >> weight >> catalizador)
                 {
-                    output << catalizador << line.substr(pos + 4) << " " << weight << endl;
-                    graph[catalizador].push_back(toEdge(line.substr(pos + 4), stoi(weight)));
+                    output << catalizador << line.substr(pos + 5) << " " << weight << endl;
+                    graph[catalizador].first.push_back(toEdge(line.substr(pos + 5), stoi(weight)));
+                    // cout << "catalizador: " << catalizador << " destination: " << line.substr(pos + 5) << " weight: " << weight << endl;
                 }
             }
         }
@@ -84,19 +84,46 @@ void Graph::leitura(string filename)
     return;
 }
 
-int Graph::hidrogenPrice(string vertice, int hidrogenio)
+math::Integer Graph::hidrogenPrice(string vertice)
 {
+    math::Integer hidrogenio = 0;
     if (vertice == "ouro")
         return 1;
-    vector<Edge> vec = graph[vertice];
+    const vector<Edge> vec = graph[vertice].first;
+
     for (auto it = vec.begin(); it != vec.end(); it++)
     {
-        cout << "vertice: " << vertice << " weight: " << it->weight << " edge: " << it->Destination << endl;
+        hidrogenio = hidrogenio + (it->weight * hidrogenPrice(it->Destination));
     }
-    for (auto it = vec.begin(); it != vec.end(); it++)
-    {
-        hidrogenio += it->weight * hidrogenPrice(it->Destination, hidrogenio);
-        cout << "vertice: " << vertice << " weight: " << it->weight << " edge: " << it->Destination << endl;
-    }
+    //     while (vec.size())
+    //     {
+    //         Edge ed = vec.back();
+    //         vec.pop_back();
+    //         // cout << "destination: " << ed.Destination << endl;
+
+    //         hidrogenio = hidrogenio + (ed.weight * hidrogenPrice(ed.Destination));
+    // #ifdef DEBUG
+    //         cout << "vertice: " << vertice << " weight: " << ed.weight << " edge: " << ed.Destination << endl;
+    //         cout << "hidrogenio: " << hidrogenio << endl;
+    //         cout << "vertice: " << vertice << endl;
+    //         cout << "ed.Destination: " << ed.Destination << endl;
+    //         cout << "ed.weight: " << ed.weight << endl;
+    //         cout << endl;
+    // #endif
+    //     }
     return hidrogenio;
 }
+
+// math::Integer print(string s)
+// {
+//     if (s == "ouro")
+//     {
+//         return 1;
+//     }
+//     math::Integer total;
+//     for (unsigned int i = 0; i < grafo[s].size(); i++)
+//     {
+//         total += grafo[s][i].peso * print(grafo[s][i].nome);
+//     }
+//     return total;
+// }

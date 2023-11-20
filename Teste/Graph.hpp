@@ -3,17 +3,19 @@
 #include <map>
 #include <set>
 #include <vector>
+#include <utility>
+#include "math_Integer.h"
 
 class Graph
 {
 private:
-    std::map<std::string, std::vector<Edge>> graph;
+    std::map<std::string, std::pair<std::vector<Edge>, math::Integer>> graph;
     std::set<std::string> list;
 
 public:
     Graph();
     ~Graph();
-    std::map<std::string, std::vector<Edge>> getMap();
+    std::map<std::string, std::pair<std::vector<Edge>, math::Integer>> getMap();
     std::set<std::string> getVertices();
     void addEdge(std::string V, std::string Destination, float weight = 0);
     void setVecEdge(std::string V, std::vector<Edge> E);
@@ -25,7 +27,7 @@ public:
         for (auto it = g.graph.begin(); it != g.graph.end(); ++it)
         {
             os << it->first << "-";
-            for (auto it2 = it->second.begin(); it2 != it->second.end(); it2++)
+            for (auto it2 = it->second.first.begin(); it2 != it->second.first.end(); it2++)
                 os << *it2 << "\n";
             os << "\n";
         }
@@ -33,5 +35,5 @@ public:
     }
     void addToList(std::string V, std::string Destination, float weight = 0);
     void leitura(std::string filename);
-    int hidrogenPrice(std::string vertice, int hidrogenio = 0);
+    math::Integer hidrogenPrice(std::string vertice);
 };

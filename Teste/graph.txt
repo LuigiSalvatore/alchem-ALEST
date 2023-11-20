@@ -1,0 +1,39 @@
+cadmio-paladio (8)
+
+cesio-netunio (5)
+
+cromo-zinco (4)
+
+erbio-netunio (2)
+
+europio-selenio (3)
+
+hidrogenio-iterbio (10)
+praseodimio (1)
+cromo (2)
+protactinio (8)
+cadmio (3)
+europio (6)
+cesio (7)
+itrio (10)
+erbio (1)
+
+iterbio-promecio (3)
+
+itrio-promecio (3)
+
+netunio-paladio (6)
+
+paladio-zinco (9)
+
+praseodimio-zinco (3)
+
+promecio-zinco (8)
+
+protactinio-selenio (3)
+
+selenio-ouro (1)
+
+zinco-ouro (6)
+
+
