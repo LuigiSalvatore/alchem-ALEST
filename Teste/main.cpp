@@ -22,7 +22,7 @@ using namespace std::chrono;
 
 int main(void)
 {
-    string files[] = {"casoteste.txt", "casoa5.txt", "casoa20.txt", "casoa40.txt", "casoa60.txt", "casoa80.txt", "casoa120.txt", "casoa240.txt", "casoa280.txt", "caso320.txt", "casoa360.txt", "casoa400.txt"};
+    string files[] = {"casoteste.txt", "casoa5.txt", "casoa20.txt", "casoa40.txt", "casoa60.txt", "casoa80.txt", "casoa120.txt", "casoa240.txt", "casoa280.txt", "casoa320.txt", "casoa360.txt", "casoa400.txt"};
 
     for (int i = 0; i < sizeof(files) / sizeof(files[0]); i++)
     {
