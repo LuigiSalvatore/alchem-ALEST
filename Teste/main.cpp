@@ -34,9 +34,9 @@ int main(void)
         cout << graph.hidrogenPrice("hidrogenio") << endl;
         cout << "===========================================================================================" << endl;
         auto stop = high_resolution_clock::now();
-        auto duration = duration_cast<microseconds>(stop - start);
+        auto duration = duration_cast<milliseconds>(stop - start);
         cout << "Time taken by function: "
-             << duration.count() << " microseconds" << endl;
+             << duration.count() << " milliseconds" << endl;
         cout << "===========================================================================================" << endl;
         cout << "Times the function was called: " << COUNTER_OF_LOOPS << endl;
         cout << "===========================================================================================" << endl;
